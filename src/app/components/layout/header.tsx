@@ -53,7 +53,7 @@ function Header() {
 
 
                  {/* mobile Menu button */}
-               <div className="relative">
+               <div className="md:hidden">
       <button
         onClick={toggleMenu}
         className="lg:hidden p-2 text-white "
