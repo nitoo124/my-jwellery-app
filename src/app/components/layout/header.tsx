@@ -64,14 +64,14 @@ function Header() {
       <div
         className={`${
           isOpen ? "translate-x-0" : "-translate-x-full"
-        } w-screen z-10 transition-transform duration-300 fixed inset-0 bg-black  flex justify-center items-center md:hidden mt-[4.5rem]`}
+        } w-screen z-10 transition-transform duration-300 fixed inset-0 bg-black  flex justify-center  md:hidden mt-[4.5rem]`}
       >
           {/*mobile  navbar */}
 
-          <nav className=' p-6 text-xl mt-3 flex flex-col '>
+          <nav className=' p-6 text-xl  flex flex-col mt-[40%] '>
 
 {
-    Navbar.map(({ Name, path }) => <Link className='text-zinc-300 hover:text-zinc-400 text-center' href={path} >{Name}</Link>)
+    Navbar.map(({ Name, path }) => <Link className='text-zinc-300 hover:text-zinc-400 text-center mt-1 ' href={path} >{Name}</Link>)
 
 }
   <Button text = 'Log In' bg='bg-zinc-300' textcolor='text-black '/>
