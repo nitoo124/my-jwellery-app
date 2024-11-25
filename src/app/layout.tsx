@@ -20,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${jost.className} "maz-w-screen-xl mx-auto"`}>
+      <body className={`${jost.className}`}>
         <Header/>
         {children}</body>
         <Footer/>
