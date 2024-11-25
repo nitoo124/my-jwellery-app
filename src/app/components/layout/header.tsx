@@ -73,7 +73,10 @@ function Header() {
 
 {
     Navbar.map(({ Name, path }) => <Link className='text-zinc-300 hover:text-zinc-400 text-center' href={path} data-aos = 'fade-right' data-aos-easing = 'ease-in'>{Name}</Link>)
+
 }
+  <Button text = 'Log In' bg='bg-zinc-300' textcolor='text-black '/>
+
 </nav>
       </div>
     </div>
