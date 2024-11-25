@@ -65,7 +65,7 @@ function Header() {
       <div
         className={`${
           isOpen ? "translate-x-0" : "-translate-x-full"
-        } w-screen z-10 transition-transform duration-300 fixed inset-0 bg-black  flex justify-center items-center :hidden mt-[4.5rem]`}
+        } w-screen z-10 transition-transform duration-300 fixed inset-0 bg-black  flex justify-center items-center md:hidden mt-[4.5rem]`}
       >
           {/*mobile  navbar */}
 
