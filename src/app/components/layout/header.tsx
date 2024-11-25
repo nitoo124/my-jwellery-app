@@ -54,8 +54,7 @@ function Header() {
 
                  {/* mobile Menu button */}
                <div className="md:hidden">
-      <button
-        onClick={toggleMenu}
+      <button onClick={toggleMenu}
         className="lg:hidden p-2 text-white "
       >
         {isOpen ? <IoMdClose size={30}/> : <IoMenuSharp size={30}/>}
