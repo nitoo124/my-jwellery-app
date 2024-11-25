@@ -53,7 +53,7 @@ function Header() {
 
 
                  {/* mobile Menu button */}
-               <div>
+               <div className="relative">
       <button
         onClick={toggleMenu}
         className="lg:hidden p-2 text-white "
@@ -65,20 +65,16 @@ function Header() {
       <div
         className={`${
           isOpen ? "translate-x-0" : "-translate-x-full"
-        }  z-10 duration-300 fixed inset-0 bg-black  flex justify-center items-center md:hidden mt-[4.5rem]`}
+        }  z-10 transition-transform duration-300 fixed inset-0 bg-black  flex justify-center items-center :hidden mt-[4.5rem]`}
       >
           {/*mobile  navbar */}
 
-          <nav className=' p-6 text-xl mt-3  '>
-
-            <ul>
+          <nav className=' p-6 text-xl mt-3 flex flex-col '>
 
 {
-    Navbar.map(({ Name, path }) => <Link className='text-zinc-300 hover:text-zinc-400 ' href={path} ><li className='text-center'>{Name}</li></Link>)
+    Navbar.map(({ Name, path }) => <Link className='text-zinc-300 hover:text-zinc-400 text-center' href={path} >{Name}</Link>)
 
 }
-</ul>
-  <Button text = 'Log In' bg='bg-zinc-300' textcolor='text-black '/>
 
 </nav>
       </div>
