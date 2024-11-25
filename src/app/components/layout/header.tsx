@@ -26,7 +26,7 @@ function Header() {
     ]
 
     return (
-        <header className=' bg-black flex justify-between max-w-screen-xl mx-auto sticky top-0 left-0 z-10 '>
+        <header className=' bg-black flex justify-between max-w-screen-xl mx-auto sticky top-0  z-10 '>
 
             {/* logo */}
             <div className='flex  relative '>
@@ -65,11 +65,11 @@ function Header() {
       <div
         className={`${
           isOpen ? "translate-x-0" : "-translate-x-full"
-        }  z-10 transition-transform duration-300 fixed inset-0 bg-black  flex justify-center items-center lg:hidden mt-[4.5rem]`}
+        }  z-10 transition-transform duration-300 fixed inset-0 bg-black  flex justify-center items-center md:hidden mt-[4.5rem]`}
       >
           {/*mobile  navbar */}
 
-          <nav className=' p-6 text-xl mt-3 flex flex-col'>
+          <nav className=' p-6 text-xl mt-3 flex flex-col '>
 
 {
     Navbar.map(({ Name, path }) => <Link className='text-zinc-300 hover:text-zinc-400 text-center' href={path} >{Name}</Link>)
